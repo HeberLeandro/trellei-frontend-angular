@@ -1,0 +1,12 @@
+<div class="flex flex-column align-items-end p-2 header col-12 p-0">
+    <div class="flex flex-row align-items-center">
+        <div class="mr-3">
+            <button id="btn-theme" (click)="changeTheme()" class="pi pi-sun flex flex-shrink-0 px-link border-1 border-solid w-2rem h-2rem surface-border border-round surface-card align-items-center justify-content-center transition-all transition-duration-300 hover:border-primary"></button>
+        </div>
+        <div class="mr-1">
+            <p-menu  #menu [model]="items" [popup]="true"></p-menu>
+            <p-button (onClick)="menu.toggle($event)" icon="pi pi-user" size="small" [rounded]="true"></p-button>
+        </div>
+         
+    </div>
+</div>

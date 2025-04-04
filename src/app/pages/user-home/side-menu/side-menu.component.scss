@@ -1,0 +1,10 @@
+div > div {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    text-align: end;
+    &:hover {
+      background-color: var(--surface-d);
+      cursor: pointer;
+    }
+  }
