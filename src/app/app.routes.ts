@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
-import { UserHomeComponent } from './pages/user-home/user-home.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { LoginComponent } from './pages/login/login.component';
+import { UserBoardsComponent } from './modules/boards/pages/user-boards/user-boards.component';
+import { PageNotFoundComponent } from './modules/page-not-found/page-not-found.component';
+import { LoginComponent } from './modules/landpage/pages/login/login.component';
 
 export const routes: Routes = [
   { path: '', component: LoginComponent },
-  { path: 'u/:username/boards', component: UserHomeComponent },
+  { path: 'u/:username/boards', component: UserBoardsComponent },
   { path: '**', component:  PageNotFoundComponent},
 ];

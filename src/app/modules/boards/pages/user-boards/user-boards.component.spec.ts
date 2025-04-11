@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserHomeComponent } from './user-home.component';
+import { UserBoardsComponent } from './user-boards.component';
 import { DividerModule } from 'primeng/divider';
 
 describe('UserHomeComponent', () => {
-  let component: UserHomeComponent;
-  let fixture: ComponentFixture<UserHomeComponent>;
+  let component: UserBoardsComponent;
+  let fixture: ComponentFixture<UserBoardsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserHomeComponent, DividerModule]
+      imports: [UserBoardsComponent, DividerModule]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(UserHomeComponent);
+    fixture = TestBed.createComponent(UserBoardsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

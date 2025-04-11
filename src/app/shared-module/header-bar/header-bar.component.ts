@@ -1,8 +1,8 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { DOCUMENT } from '@angular/common';
-import { ThemeServiceService } from '../../services/theme-service.service';
-import { COMMON_IMPORTS } from '../shared/shared-module/shared-module.component';
+import { ThemeServiceService } from '../../core/services/theme-service.service';
+import { COMMON_IMPORTS } from '../../shared-module/shared-module.component';
 
 @Component({
   selector: 'app-header-bar',

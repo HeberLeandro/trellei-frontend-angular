@@ -1,0 +1,8 @@
+<div class="flex flex-row-reverse flex-column align-items-start side-menu">
+    @for (item of items; track $index) {
+        <div>
+            <li [class]="item.icon"></li>
+            {{ item.label }}
+        </div>
+    }
+    </div>

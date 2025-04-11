@@ -5,3 +5,9 @@
 :host ::ng-deep .p-divider .p-divider-content  {
     background-color: var(--surface-ground);
 }
+
+:host ::ng-deep .new-board-button .pi {
+    font-size: 1.5rem; 
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
