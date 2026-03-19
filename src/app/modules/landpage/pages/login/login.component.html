@@ -1,2 +1,38 @@
-<input type="text" pInputText [(ngModel)]="value" />
-<p>{{value()}}</p>
+  <!-- Cabeçalho -->
+  <div class="flex flex-column col-12 p-0">
+    <app-header-bar></app-header-bar>
+  </div>
+
+<div class="grid-nogutter flex justify-content-center m-auto">
+
+<div class="col-7 align-items-center justify-content-center pt-5">
+    <div class="col-12 align-items-center justify-content-center mt-5 mb-5 pb-5 ">
+        <div class="card flex justify-content-center ">
+            <p-image  class=" bg-primary border-round px-3 py-2 login-logo"
+                src="/assets/icons/Trellei.png" 
+                alt="Image"
+                sizes="2rem"  />
+        </div>
+    </div>
+
+    <div class="col-12 align-items-center justify-content-center bg-secondary mt-5">
+        <h1>Sing In</h1>
+        <div class="formgrid grid">
+            <div class="field col-12">
+                <label for="firstname2">Email:</label>
+                <input id="firstname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+            <div class="field col-12">
+                <label for="lastname2">Password:</label>
+                <input id="lastname2" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+</div>
+
+
