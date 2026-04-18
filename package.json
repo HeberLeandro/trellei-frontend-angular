@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "github-build": "ng build --configuration production --base-href \"/trellei-frontend-angular/\"",
+    "github-deploy": "npx angular-cli-ghpages --dir dist/trellei-frontend-angular/browser",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:trellei-frontend-angular": "node dist/trellei-frontend-angular/server/server.mjs"
