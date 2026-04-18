@@ -1,19 +1,21 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, Input } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { DOCUMENT } from '@angular/common';
 import { ThemeServiceService } from '../../core/services/theme-service.service';
 import { COMMON_IMPORTS } from '../../shared-module/shared-module.component';
+import { ImageModule } from 'primeng/image';
 
 @Component({
   selector: 'app-header-bar',
   standalone: true,
-  imports: [...COMMON_IMPORTS],
+  imports: [...COMMON_IMPORTS, ImageModule],
   templateUrl: './header-bar.component.html',
   styleUrl: './header-bar.component.scss',
 })
 export class HeaderBarComponent implements OnInit {
   items: Array<MenuItem> | undefined;
   isLightTheme: boolean = false;
+  @Input() showUserMenu: boolean = false;
   btnTheme: HTMLElement | null;
   themeService: ThemeServiceService;
 

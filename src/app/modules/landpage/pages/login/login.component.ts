@@ -2,11 +2,13 @@ import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ImageModule } from 'primeng/image';
 import { HeaderBarComponent } from '../../../../shared-module/header-bar/header-bar.component';
+import { ButtonModule } from 'primeng/button';
+
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [FormsModule, ImageModule, HeaderBarComponent],
+  imports: [FormsModule, ImageModule, HeaderBarComponent, ButtonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',
 })

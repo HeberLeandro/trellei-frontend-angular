@@ -1,4 +1,12 @@
 div.header {
-  background-color: var(--surface-ground);
+  background-color: #3b82f6;
   border-bottom: 1px solid var(--surface-border);
+}
+
+:host ::ng-deep .app-logo img {
+    margin: auto;
+    display: flex;
+    border-radius: 0.2rem;
+    height: 2rem;
+   
 }
