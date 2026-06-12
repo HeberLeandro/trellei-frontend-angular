@@ -1,0 +1,1 @@
+import{Fb as r,Mb as s,S as i,pb as o,qb as a}from"./chunk-GVI3BIEG.js";var d=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=i({type:e,selectors:[["app-signup"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,c){n&1&&(o(0,"p"),r(1,"signup works!"),a())}});let t=e;return t})();export{d as SignupComponent};
