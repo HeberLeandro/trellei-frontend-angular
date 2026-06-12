@@ -8,3 +8,13 @@
 .logo-div {
     background: linear-gradient(180deg, #3b82f6 0%, #e8efff 100%);
 }
+
+:host ::ng-deep .linkButton {
+    outline: none;
+    box-shadow: none;
+
+}
+
+:host ::ng-deep .linkButton .p-button-label {
+    text-decoration: none;
+}
