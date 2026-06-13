@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class PageNotFoundComponent {
 
+  ngOnInit(): void {
+    console.log('Page Not Found Component Initialized');
+  }
 }

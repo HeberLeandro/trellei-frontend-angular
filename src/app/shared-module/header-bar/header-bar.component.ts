@@ -2,13 +2,15 @@ import { Component, Inject, OnInit, Input } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { DOCUMENT } from '@angular/common';
 import { ThemeServiceService } from '../../core/services/theme-service.service';
-import { COMMON_IMPORTS } from '../../shared-module/shared-module.component';
+import { MenuModule } from 'primeng/menu';
+import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-header-bar',
   standalone: true,
-  imports: [...COMMON_IMPORTS, ImageModule],
+  imports: [ImageModule, MenuModule, ButtonModule, NgIf],
   templateUrl: './header-bar.component.html',
   styleUrl: './header-bar.component.scss',
 })
